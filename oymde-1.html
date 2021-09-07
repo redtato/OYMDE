@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oymde</title>
+    <link rel="stylesheet" href="oymde-1.css">
+</head>
+<body>
+
+    <div class="title">
+        <h1>obtencion y modificacion de elementos</h1>
+        <h2>solo mostrare los mas importantes</h2>
+        <h3>revisa la consola para los resultados (Ctrl + Shift + i)</h3>
+    </div>
+
+    <div class="cont">
+        <div class="div">
+            <h3>textContent</h3>
+            <p class="textContent">devuelve el texto, incluso si no lo puedes ver, por ejemplo esto: <b style="visibility: hidden;">esto es un texto invisible</b></p>
+            <input value="mostrarlo en console" type="button" onclick="IB('teCo')">
+        </div>
+        <div class="div">
+            <h3>innerText</h3>
+            <p class="innerText">devuelve el texto, solo que sigue algunas especificaciones, ya no devuelve el texto invisible, como este: <b style="visibility: hidden;">esto es un texto invisible</b> (este ya no se usa mucho)</p>
+            <input value="mostrarlo en console" type="button" onclick="IB('inTe')">
+        </div>
+        <div class="div">
+            <h3>innerHTML</h3>
+            <p class="innerHTML">devuelve solamente el codigo que hay por dentro del elemento, por ejemplo los <b style="color: red;">colores</b> y <i>otras cosas mas</i></p>
+            <input value="mostrarlo en console" type="button" onclick="IB('inHT')">
+        </div>
+        <div class="div">
+            <h3>outerHTML</h3>
+            <p class="outerHTML">devuelve el codigo del elemento completo, como las clases</p>
+            <input value="mostrarlo en console" type="button" onclick="IB('ouHT')">
+        </div>
+    </div>
+    
+    <script src="oymde-1.js"></script>
+
+</body>
+</html>
